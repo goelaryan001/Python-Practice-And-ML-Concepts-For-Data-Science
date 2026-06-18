@@ -20,6 +20,7 @@ class Solution:
         max_sum=0
         while head2:
             max_sum=max(max_sum, head.val+head2.val)
+            head.head
             head=head.next
             head2=head2.next
         
