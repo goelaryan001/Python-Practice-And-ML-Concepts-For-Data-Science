@@ -1,4 +1,6 @@
-#Brute force: for starting letter b check every substring to see if it is a palindrome and repeat this for every character, now to check if it is a palindorme it will take O(N) number of substring is n^2:O(N^3)
+#Brute force: for starting letter b check every substring to see if it is a palindrome and 
+# repeat this for every character, now to check if it is a palindorme it will take O(N) number 
+# of substring is n^2:O(N^3)
 #For every character, consider it as the center of a palindrome.
 # Then expand outward and check how far the palindrome extends.
 # We have N possible centers, and for each center we may expand up to N characters.
