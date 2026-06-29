@@ -29,4 +29,5 @@ class Solution:
             curr=nxtPair
         
         return dummy.next
+    return
         

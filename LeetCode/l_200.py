@@ -31,3 +31,9 @@ class Solution:
                     islands+=1
         return islands
         
+        for r in range(rows):
+            for c in range(cols):
+                if grid[r][c]=="1" and (r,c) not in vsisted:
+                    bfs(r,c)
+                    islands+=1
+        return islands
