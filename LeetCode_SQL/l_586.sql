@@ -7,5 +7,6 @@ GROUP BY customer_number)
 Select customer_number
 from cte
 where Qty=(Select Max(Qty) From cte)
+--remember Aggregate funtion cant be used in where clause so used select statement to get max
 
 --cte is almost like a virtual view
