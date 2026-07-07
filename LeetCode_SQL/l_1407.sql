@@ -9,3 +9,4 @@ left join cte
 on u.id=cte.user_id
 order by
 case when cte.travelled_distance is null then 0 else cte.trvlled_distance end desc, u.name
+case when cte.travelled_distance
