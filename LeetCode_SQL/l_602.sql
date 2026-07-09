@@ -1,0 +1,15 @@
+with cte as(
+    select requester_id as id
+    from RequestAccepted
+    union all
+    select acceptor_id as id
+    from RequestAccepted
+),
+counts as(
+    select id, count(*) as num
+    from cte
+    group by id
+)
+select id, num
+from counts
+where num=(select max(num) from counts)
