@@ -17,3 +17,4 @@ JOIN cte c
 JOIN cte2 c2
     ON i.lat = c2.lat
    AND i.lon = c2.lon;
+
